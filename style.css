@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    height: 70px;
+    background-color: #222f3d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    background-image: url("./logo2.png");
+    width: 55px;
+    height: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.logo-word {
+    font-weight: 700;
+    margin-left: 10px;
+    /* white-space: nowrap;   */
+    /* to make the whole sentence in one line */
+}
+
+.marquee {
+    color: aliceblue;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 0.85rem;
+    width: auto;
+}
+
+.name {
+    color: aliceblue;
+    font-size: 1rem;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url("./hero.webp");
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+}
+
+.shop-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+/* Box Design */
+.box {
+    width: 40%;
+    background-color: white;
+    padding: 1rem ;
+    margin: 0.5rem 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    border: 2px solid orange;
+}
+
+.bimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.box h2 {
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+a.bcontent {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem;
+    }
+
+    .nav-logo {
+        display: flex;
+        align-items: center;
+        flex: 1;
+    }
+
+    .logo {
+        width: 25px;  /* Smaller logo width */
+        height: 30px; /* Smaller logo height */
+        margin-right: 0.5rem;
+    }
+
+    .logo-word {
+        font-size: 0.9rem;  /* Smaller font size for logo text */
+        margin-right: 0.5rem;
+        /* white-space: nowrap; */
+    }
+
+    .name {
+        font-size: 0.9rem;  /* Smaller font size for name */
+        font-weight: 600;
+        /* white-space: nowrap; */
+    }
+
+
+    .box {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .marquee {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 35px;
+        height: 40px;
+    }
+
+    .navbar {
+        padding: 0.5 rem;
+    }
+
+    .marquee {
+        font-size: 0.7rem;
+    }
+
+    .hero {
+        padding: 1rem;
+    }
+
+    .bimg {
+        font-size: 1.5rem;
+    }
+
+    .box h2 {
+        font-size: 1.1rem;
+    }
+}
